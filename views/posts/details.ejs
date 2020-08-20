@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    
+    <h2><%= id_data.title %></h2><br>
+    <img src=<%= id_data.file_url %>><br>
+    <%= id_data.poster_name %>
+    <%= id_data.post_created %>
+    <%= id_data.comments %> <br><br><br>
+
+    <form id="details_comments" action="/posts/newComment" method="POST">
+        <input id="details_post" type="text" name="comments" placeholder="Comment here">
+        <button id="comment_button" type="submit">Comment</button>
+        <input type='hidden' name="hidden_input" value=<%= postId %>>
+    </form>
+
+</body>
+
+</html>

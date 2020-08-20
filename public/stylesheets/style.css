@@ -1,0 +1,84 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#front_page_title {
+  margin-top: 200px;
+  text-align: center;
+  font-size: 60px;
+}
+
+#front_page {
+  list-style-type: none;
+  margin-right: 30px;
+}
+
+#new_title {
+  text-align: center;
+  font-size: 100px;
+}
+
+#new_form {
+  text-align: center;
+}
+
+#new_posting{
+  width: 300px;
+  height: 50px;
+}
+
+
+#new_url{
+  width: 300px;
+  height: 50px;
+}
+
+#post_button {
+  width: 70px;
+  height: 55px;
+}
+
+#front_page_bg {
+  background-image: url(https://cdn.wallpapersafari.com/52/95/6d9FIl.jpg);
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+#post_title {
+  text-align: center;
+}
+
+#post_body {
+  text-align: center;
+  background-color: rgb(223, 147, 159);
+}
+
+
+#new_body {
+  background-image: url(https://lh3.googleusercontent.com/proxy/z9aySY0MR2pWT0eShJ4e4T3M0oxVmir6Dk-1YTb0YgIoGYgA71LSCKohQu8LW0LRky8VrkwBNfFG_tyniDpoApYlx7TQKtzLeqnKWCC44qI_ovcE2G1R2czPaIOHHg);
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+#explore_posts {
+  height: 70px;
+  width: 240px;
+  background-color: papayawhip;
+  font-size: 30px;
+}
+
+#upload_my_cat {
+  height: 70px;
+  width: 240px;
+  background-color: papayawhip;
+  font-size: 30px;
+}

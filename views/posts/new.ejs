@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html id= "new_body" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Posting</title>
+</head>
+<body >
+    <button id="explore_posts"><a href="/posts">Explore Posts</a></button>
+    <br>
+    <h2 id='new_title'>New Posts</h2>
+
+    <form id='new_form' action="/posts" method="POST">
+        <input id='new_posting' type='text' name='posting' placeholder="Any Cats?">
+        <input id='new_url' type="text" name="file" class="filepond" placeholder="Enter Your URL">
+        <button id='post_button' type="submit">Post</button>
+    </form>
+    
+    
+</body>
+</html>

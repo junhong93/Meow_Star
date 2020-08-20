@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Posts</title>
+</head>
+<button id="upload_my_cat"><a href="/posts/new">Upload My Cat</a></button>
+<br><br><br><br>
+<h1 id="post_title">Meow Star Posts</h1>
+
+
+<body id="post_body">
+    <% my_data.forEach(function(element) { %>
+    <img src=<%= element.file_url %>><br>
+    <%= element.poster_name %><br>
+    <a href=/posts/<%= element.id %>>Click Here</a><br><br><br>
+    <% }) %>
+
+</body>
+
+</html>
