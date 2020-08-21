@@ -82,3 +82,18 @@ a {
   background-color: papayawhip;
   font-size: 30px;
 }
+
+/* #description_new {
+  margin-right: 75px;
+  height: 100px;
+  width: 610px;
+} */
+
+img {
+  max-width: 500px;
+  max-height: 800px;;
+}
+
+.clicked_page {
+  background-color: #00B7FF;
+}

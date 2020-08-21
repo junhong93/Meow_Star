@@ -14,10 +14,9 @@
 
 <body id="post_body">
     <% my_data.forEach(function(element) { %>
-    <img src=<%= element.file_url %>><br>
-    <%= element.poster_name %><br>
-    <a href=/posts/<%= element.id %>>Click Here</a><br><br><br>
-    <% }) %>
+    <a href=/posts/<%= element.id %>><img src=<%= element.file_url %>></a><br>
+    <%= element.poster_name %><br><br><br><br><br>
+    <% }) %> 
 
 </body>
 

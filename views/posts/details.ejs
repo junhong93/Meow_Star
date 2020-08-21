@@ -13,14 +13,16 @@
     <h2><%= id_data.title %></h2><br>
     <img src=<%= id_data.file_url %>><br>
     <%= id_data.poster_name %>
-    <%= id_data.post_created %>
     <%= id_data.comments %> <br><br><br>
+   
 
-    <form id="details_comments" action="/posts/newComment" method="POST">
+    <form id="details_comments" action="/posts/<%= id_data %>" method="POST">
+        <input id="detail_name_comment" type="text" name="commenter_name" placeholder="Your name"><br>
         <input id="details_post" type="text" name="comments" placeholder="Comment here">
         <button id="comment_button" type="submit">Comment</button>
         <input type='hidden' name="hidden_input" value=<%= postId %>>
     </form>
+
 
 </body>
 

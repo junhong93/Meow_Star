@@ -6,10 +6,6 @@ const commentSchema = new mongoose.Schema({
         required: true,
     },
     description: String,
-    comment_created: {
-        type: Number,
-        default: new Date().now
-    }, 
 })
 
 const postSchema = new mongoose.Schema({
@@ -22,12 +18,9 @@ const postSchema = new mongoose.Schema({
         required: true,
     },
     file_url: String,
-    post_created: {
-        type: Number,
-        default: new Date().now
-    },
     comments: [commentSchema]
 })
 
 PostModel = mongoose.model('Posting', postSchema)
+CommentModel = mongoose.model('Comments', commentSchema)
 module.exports = mongoose.model('Post', postSchema)
