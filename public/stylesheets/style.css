@@ -97,3 +97,7 @@ img {
 .clicked_page {
   background-color: #00B7FF;
 }
+
+#comment_data {
+  text-align: center;
+}

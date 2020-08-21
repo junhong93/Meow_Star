@@ -9,24 +9,31 @@
 
 <body>
 
-    
+
     <h2><%= id_data.title %></h2><br>
     <img src=<%= id_data.file_url %>><br>
-    <%= id_data.poster_name %>
-    <% id_data.comments.forEach(function(element) { %>
-    <%= element.commenter_name %><br>
-    <%= element.description %>
-    <% }) %>
-   
+    <%= id_data.poster_name %><br><br>
+
+
+
 
     <form id="details_comments" action="/posts/newComments" method="POST">
         <input id="detail_name_comment" type="text" name="commenter_name" placeholder="Your name"><br>
         <input id="details_post" type="text" name="comments" placeholder="Comment here">
         <button id="comment_button" type="submit">Comment</button>
         <input type='hidden' name="hidden_input" value=<%= postId %>>
-    </form>
+    </form><br><br>
 
-
+    <div id='comment_data'>
+        <% id_data.comments.forEach(function(element) { %>
+        <%= element.description %>
+        by <%= element.commenter_name %>
+        <form action="/post/delete" method="POST">
+            <button id="deleting">delete</button>
+            <input type="hidden" name='deleteId' value=<%= "postId" %>>
+        </form></span>
+        <% }) %>
+    </div>
 </body>
 
 </html>
